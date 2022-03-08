@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+/*  Estilo de las letras usadas*/
+
+.header_fonta{
+    font-family: 'Poppins', sans-serif;
+    font-weight:  500;
+    font-size: 14px;
+    /* FIXME: Verificar este boton*/
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 34px;
+    align-self: center;
+}
+
+.color_input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 34px;
+    background-color: #FFBF59;
+}
+
+
+.contenido_fonth2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:  bold;
+    font-size: 30px;
+    margin: 0px;
+    padding-bottom: 15px;
+    /* text-align: center; */
+}
+
+.contenido_fontp{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.widget_fonth2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fonth2_widgetcaja{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+}
+
+.widget_parrafo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: justify;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+}
+
+.font_articulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    height: 68px;
+    /* word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+}
+
+.p_footer{
+    padding: 5px;
+}
+
+.fonth2_footer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+body {
+    background-color: #F2F3EB;
+    /* background-color: #EAEDED; */
+    /* background-image: repeating-linear-gradient(-45deg,
+    #ffffff 0px,
+    #ffffff 20px,
+    #b1e0ff 20PX,
+    #b1e0ff 40px); */
+}
+
+.contenedor {
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:    "header    header    header"
+                            "contenido contenido sidebar"
+                            "widget_productos widget_productos widget_productos"
+                            "widget_adornos widget_adornos widget_adornos"
+                            "form_pedido form_pedido form_pedido"
+                            "footer footer footer";
+
+}
+
+.contenedor .header {
+    color: black;
+    grid-area: header;
+    margin-bottom: 40px;
+    background-color: #FFBF59;
+    border-radius: 5px;
+}
+
+.contenedor .main-header__container {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor .main-header__container a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 240px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menuNav{
+    list-style: none;
+    letter-spacing: -0.5;
+    display: flex;
+}
+
+.menu .menuNav li{
+    /* display: block; */
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+    outline: none;
+    display: flex;
+    
+}
+
+.contenedor .contenido{
+    grid-area: contenido;
+    padding: 20px;
+    /* FIXME: Revisar el display, es lo que agregamos*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contenedor .contenido .texto{
+    text-align: justify;
+}
+
+.contenedor .contenido .texto .titulo2{
+    margin: 0px;
+    text-align: center;
+    text-indent: 40px;
+}
+
+.contenedor .contenido .contenido_button .button_info{
+    padding: 0 10px;
+    background-color: #4F3A3A;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer; 
+    height: 35px;
+    width: 150px;
+    transition: .3s ease all;
+}
+
+.contenedor .contenido .contenido_button .button_info:hover{
+background: rgba(133,71,71,1);
+color: whitesmoke;
+}
+
+.contenedor .sidebar{
+    display: flex;
+    justify-content: center;
+    grid-area: sidebar;
+    /* padding: 20px; */
+    margin-bottom: 50px;
+    
+}
+
+.contenedor .sidebar img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px ;
+    border-radius: 20px;
+    
+}
+
+/* Iconos */
+.fa-facebook{
+    color: blue;
+    font-size: 20px;
+}
+
+.fa-twitter{
+    color: #1ca6d6;
+    font-size: 20px;
+}
+
+.fa-instagram{
+    color: #ae31a4;
+    font-size: 20px;
+}
+
+.contenedor .widget_productos{
+    /* background-color: blue; */
+    grid-area: widget_productos;
+    /* padding: 20px; */
+}
+.widget_productos .producto_caja{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    row-gap: 30px;
+    column-gap: 80px;
+    margin-bottom: 50px;
+}
+
+.producto{
+    width: 300px;
+    /* height: 100px; */
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 30px;
+    /* line-height: 0; */
+    /* overflow: hidden; */
+    /* margin-bottom: 50px; */
+    margin-right: 20px;
+}
+
+.img_producto{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    /* line-height: 0; */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.producto_precio{
+    color: #FF4E00;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}
+
+.producto_agregar{
+    transition: .3s ease all;
+}
+
+.producto_agregar:hover{
+    color: #FF4E00;
+}
+
+.input_agregar{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+    padding: 8px;
+}
+
+.contenedor .widget_adornos{
+    /* background-color: blue; */
+    grid-area: widget_adornos;
+    padding: 20px;
+    /* width: 100px; */
+    /* text-align: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.contenedor .widget_adornos .widget_caja{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_adorno{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    /* line-height: 0; */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contenedor .form_pedido{
+    grid-area: form_pedido;
+    padding: 20px;
+}
+
+
+.footer{
+    grid-area: footer;
+    /* background-color: #12103e; */
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer .footer_logo a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+/* ESTILOS POPUP O VENTANA EMERGENTE */
+/* Hace que el fondo se ponga oscuro */
+.overlay {
+    /* FONDO OSCURO */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* PARA QUE ABARQUE TODA LA PANTALLA */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* PARA PODER CENTRAR LA VENTANA "popup" RESPECTO A LA VENTANA "overlay" */
+    display: flex;
+    /* PARA ALINEAR LOS ELEMENTOS DE FORMA VERTICAL */
+    align-items: center;
+    /* PARA ALINARLOS DE FORMA HORIZONTAL */
+    justify-content: center;
+    /* SE PUSO PARA POSICIONAR LA VENTANA ADELANTE DEL "slider" */
+    z-index: 15;
+    /* OCULTAMOS TODO, DESDE EL OVERLAY HASTA LOS ELEMENTOS HIJOS */
+    visibility: hidden;
+}
+
+
+
+
+/* CUANDO EL OVERLAY TENGA LA CLASE ACTIVE QUE SE MUESTRE TODA LA VENTANA */
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background-color: #f8f8f8;
+    /* PARA PONER LA TRANSPARENCIA  */
+    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.3);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    /* ESTA PROPIEDAD NOS VA A PERMITIR QUE TODOS LOS CAMBIOS TENGAN UNA TRANSICION, UN CAMBIO DEL ESTADO*/
+    transition: .5s ease all;
+    /* PARA CAMBIAR LA ESCALA DE NUESTRA VENTANA, Cuando se cierre */
+    transform: scale(.1);
+    /* LA VENTANA VA ESTAR A OCULTA */
+    opacity: 0;
+}
+
+
+/* PARA EL BOTON DE CERRAR */
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    /* PARA QUE EL ENLACE ABARQUE TODO EL ESPACIO DISPONIBLE */
+    display: block;
+    /* Y DADO QUE USAMOS LA PROPIEDAD ANTERIOR PODEMOS USAR "text-align" PARA POSICIONAR EL ENLACE HACIA LA DERECHA*/
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+    margin-bottom: 10px;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* El opacity es parte de la animación */
+    /* opacity: 0; */
+}
+
+.popup form .contenedor-inputs {
+    /* El opacity es parte de la animación */
+    /* opacity: 0; */
+    color: black;
+}
+
+.popup form .contenedor-inputs input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    /* Para que la fuente que esta dentro del input quede centrada verticalmente */
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    /* color: black; */
+    background-color: #5E7DE3;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    /* PARA PODER DARLE ESE EFECTO DE ANIMACIÓN CUANDO APAREZCA */
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background-color: rgba(94, 125, 227, .9);
+}
+
+/* ANIMACIONES */
+
+/* CON ESTO MOSTRAMOS LA VENTANA */
+.popup.active {
+    opacity: 1;
+    transform: scale(1)
+}
+
+/* Con la propiedad forwards la animación se queda con sus ultimas propiedades, que en este caso son las del transform to */
+.popup.popup.active h3 {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup.popup.active .contenedor-inputs {
+    animation: entradaInputs 1s ease 1s forwards;
+}
+
+/* ANIMACIÓN */
+/* Que la animación vaya de arriba hacia abajo */
+/* @keyframes entradaTitulo {
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+
+/* Parte nueva del login . Links de los formularios*/
+.contenedor-tabs{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    
+}
+
+.contenedor-tabs::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenedor-tabs li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(160,179,176,.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.contenedor-tabs li a:hover{
+    background: darken(#1ab188,5%);
+    color: black;
+}
+
+.contenedor-tabs .activo a{
+    background: #1ab188;
+    color: #fff;
+}
+
+/* Contenido del formulario */
+.contenido-tab > div:last-child {
+    display: none;
+}
+
+
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255,255,255,.5);
+    transition: all 0.43s ease;
+    backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 16px;
+    color: black;
+}
+
+label.req{
+    margin: 2px;
+    color: #1ab188;
+}
+
+/* label.activo { */
+label.activo {
+    transform: translateY(40px);
+    left: 2px;
+    font-size: 14px;
+    /* opacity: 0; */
+}
+
+label.activo.req{
+    opacity: 0;
+    transform: scale(1);
+    color: black;
+}
+
+label.highlight {
+    color: black;
+    /* color: #fff; */
+}
+/* FIXME: Este input afecta al que tenemos en el menu de iniciar sesión*/
+.txtinput {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 5px solid #a0b3b0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* color: #fff; */
+    color: black;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+
+input:focus{
+    outline: none;
+    border-color: #1ab188;
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.fila-arriba {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila-arriba:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila-arriba div{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.fila-arriba div:last-child{
+    margin: 0;
+}
+
+.button_registrar {
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 16PX;
+    /* background: #1ab188; */
+    background-color: #5E7DE3;
+    color: #fff;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+}
+
+.button_registrar:hover:focus{
+    background: darken(#1ab188,5%);
+}
+
+
+/* .button-block {
+    display: block;
+    width: 100%;
+} */
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
