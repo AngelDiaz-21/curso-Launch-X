@@ -29,3 +29,5 @@
 ![Página del cliente](src/assets/paginas-ss/Tienda%20de%20pasteles.png "Página del cliente")
 
 ## Página del usuario Pastelero
+
+![Página del pastelero](src/assets/paginas-ss/Dashboard%20Pastelero.png "Página del pastelero")
