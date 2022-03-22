@@ -1,0 +1,162 @@
+.container{
+    max-width: 1200px;
+}
+
+.row{
+    margin: 0;
+    /* padding: 0; */
+}
+/* ESTILOS HEADER  */
+nav a{
+    text-decoration: none;
+}
+
+.text-title-Nav{
+    color: #3858D6;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 13px;
+}
+
+.text-navLink{
+    color: #6D7B93;
+    font-weight: 500;
+}
+
+/* ESTILOS MAIN (ROW FIGHT-VIRUS) */
+
+.div-title-fight{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.div-title-fight h1{
+    margin: 0;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.text-buttonTitle{
+    font-size: 17px;
+}
+
+.icon-VerifiedStart{
+    padding-top: 30px;
+}
+
+.img-fight-virus{
+    height: 550px;
+    width: 412px;
+    object-fit: cover;
+}
+
+.icon-start, .icon-verified span{
+    color: #FFD012; 
+}
+
+.icon-Watch{
+    padding-top: 50px;
+}
+
+.material-icons{
+    padding-right: 10px;
+}
+
+/* ESTILOS PARA LA FILA LOGOS */
+
+.logos{
+    padding-top: 40px;
+}
+
+.img-logos{
+    width: 200px;
+}
+
+/* ESTILOS PARA LA FILA WHY-VACCINE*/
+.why-vaccine{
+    padding-top: 40px;
+}
+
+.why-vaccine h2{
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.row-card{
+    padding-top: 40px;
+}
+
+.card{
+    height: 250px;
+}
+
+.icon-card{
+    color: blue;
+    padding: 15px;
+}
+
+/* ESTILOS ROW PREPARATIONS-VACCINE */
+
+.icon-list{
+    color: blue;
+    /* padding: 15px; */
+}
+
+.preparations-vaccine{
+    padding-top: 130px;
+}
+
+.preparations-vaccine h2{
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.list-things{
+    padding-bottom: 50px;
+}
+
+/* ESTILOS EMERGENCY CONTACT */
+
+.emergency-contact{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.iconContact-card{
+    color: blue;
+    /* padding: 15px; */
+}
+
+.emergency-contact .card{
+    width: 240px;
+    height: 150px;
+}
+
+
+/* ESTILOS FOOTER */
+footer{
+    /* border: solid tomato; */
+    background-color: #EEF3FF;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #676B8D;
+}
+
+footer .footer-title{
+    color: blue;
+    font-size: 30px;
+}
+
+/* PARA QUE LOS MEDIA QUERY FUNCIONEN EL "max-width" LA MEDIDA DEBE DE SER UN POCO MAS GRANDE DE LO NORMAL QUE LA PANTALLA*/
+/* Y POR ENDE, PARA QUE SE VEA MEJOR QUE LAS MEDIDAS DE LO QUE ESTE ADENTRO NO SEA SUPERIOR. SI ACEPTA VALORES MAYORES AL "max-width" PERO EL CAMBIO NO SE NOTA MUCHO  */
+@media(max-width: 1400px){
+    .container{
+        max-width: 1000px;
+    }
+}
