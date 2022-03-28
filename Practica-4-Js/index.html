@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <div class="container">
+                <div>
+                    <img class="logo" src="assets/pokemon-logo.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row row-principal" id="row-nosotros">
+            <div class="pokedex container">
+                <div class="row">
+                    <div class="col ">
+                        <div class="row">
+                            <span class="numeroPokemon" id="numeroPokemon"></span>
+                            <input placeholder="" disabled class="nombrePokemon" id="nombrePokemon" value=""></input>
+                            <img src="/Practica-4-Js/assets/pokebola.png" alt="" width="150px" id="pokeImg"> <br>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 p-0">                                
+                                <div class="caja-Button">
+                                    <button class="button-Redondo" onclick="fetchPokemon()">Ok</button>
+                                </div>
+                            </div>
+
+                            <div class="col p-0">
+                                <div class="caja-Input">
+                                    <input class="text-center" type="text" placeholder="Buscar pokémon" id="pokeName" name="pokeName">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row conte-datos">
+                            <div class="col-6 p-0">
+                                <div class="estadisticas">
+                                    <h2 id="estadisticaSub"></h2>
+                                    <span class="" id="altura"> </span>
+                                    <span class="d-flex" id="peso"> </span>
+                                    <span class="d-flex" id="hp"> </span>
+                                    <span class="d-flex" id="ataque"> </span>
+                                    <span class="d-flex" id="defensa"> </span>
+                                    <span class="d-flex" id="velocidad"> </span>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="movimientos ">
+                                    <h2 id="movimientoSub" class="movimientoSub text-white"></h2>
+                                    <ul class="listaMovimientos" id="listaMovimientos">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row conte-datos">
+                            <div class="col">
+
+                                <div class="tipo1">
+                                    <span id="tipo1"></span>
+                                </div>
+                            </div>
+                                
+                            <div class="col">
+
+                                <div class="tipo2">
+                                    <span id="tipo2"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark">
+        <div class="row">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 px-5">
+                        <h5 class="fw-bold mb-4">ABOUT</h5>
+                        <p>Práctica de una pokedex usando la API "PokéAPI".</p>
+                        <p>Hecho con HTML, CSS, JavaScript.</p>
+                        <p>Haciendo uso del fetch para hacer las peticiones y/o consultas.</p>
+                    </div>
+                    <div class="col-lg-5 px-5">
+                        <h5 class="fw-bold mb-4">CREDITOS</h5>
+                        <div>
+                            <a class="text-white" href="https://pokeapi.co/">PokéAPI</a>
+                        </div>
+                        <div>
+                            <a class="text-white" href='https://.pngtree.com/so/signo'>signo png de .pngtree.com/</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <span>
+                            <div class="d-flex ">
+                                
+                                <a href="https://www.linkedin.com/in/angel-alberto-díaz-cortés-76ab7722a" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                
+                            
+                                <a href="https://github.com/AngelDiaz-21" target="_blank"><i class="fa-brands fa-github"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/angel_cortes_99/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <!-- <a href="https://github.com/AngelDiaz-21" target="_blank"><i class="fa-brands fa-facebook"></i>
+                                </a> -->
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./pokedex.js"></script>
+<!-- <script src="https://kit.fontawesome.com/80fd6a5411.js "></script> -->
+</html>
